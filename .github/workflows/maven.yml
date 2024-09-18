@@ -54,7 +54,7 @@ jobs:
           cache: 'maven'
 
       - name: Build and test project
-        run: ./mvnw -f pom.xml -B verify
+        run: mvn -f pom.xml -B verify
 
       - name: Upload Maven build artifact
         uses: actions/upload-artifact@v4
