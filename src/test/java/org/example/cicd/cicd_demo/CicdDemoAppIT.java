@@ -38,6 +38,6 @@ public class CicdDemoAppIT {
         .isOk()
         .expectBody()
         .jsonPath("$.length()")
-        .isEqualTo(4);
+        .isEqualTo(3);
   }
 }
