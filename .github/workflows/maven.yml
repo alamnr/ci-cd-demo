@@ -33,7 +33,7 @@ jobs:
         java-package: jdk
         cache: maven
     - name: Compile the project
-      run: chmode +x mvnw -f pom.xml -B compile
+      run:  mvn  -B compile -f pom.xml
       
   build:
     runs-on: ubuntu-latest
