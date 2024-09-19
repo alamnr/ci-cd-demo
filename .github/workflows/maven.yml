@@ -68,8 +68,8 @@ jobs:
     steps:
       - name: Run CodeQL Analysis
         uses: github/codeql-action/init@v2
-      - name: Build
-        run: make
+      #- name: Build
+       # run: make
       - name: Analyze
         run: |
           codeql database create database.db
