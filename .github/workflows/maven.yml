@@ -67,7 +67,7 @@ jobs:
     needs: [compile, build]
     steps:
       - name: Run CodeQL Analysis
-        uses: github/codeql-action/init@v1
+        uses: github/codeql-action/init@v2
       - name: Build
         run: make
       - name: Analyze
